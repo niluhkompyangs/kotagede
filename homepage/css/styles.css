@@ -85,19 +85,19 @@ b.light-color{ color: #444; }
 3. MAIN SECTION
 --------------------------------- */
 
-.main-area{ position: relative; height: 100vh; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
+.main-area{ position: fixed; height: 100vh; z-index: 1; padding: 0 20px; background-size: cover; color: #fff; }
 
 .main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;  
-	opacity: .1; background: #000; }
+	opacity: 0; background: #000; }
 
 .main-area .desc{ margin: 20px auto; max-width: 500px; }
 	
-.main-area .notify-btn{ position: fixed; bottom: 25px; right: 70px; padding: 13px 35px; border-radius: 50px; border: 2px solid #FFFFFF;
+.main-area .notify-btn{ position: absolute; bottom: 25px; right: 70px; padding: 13px 35px; border-radius: 50px; border: 2px solid #FFFFFF;
 	color: #fff; background: #FF0000; }
 
 .main-area .notify-btn:hover{ background: none; }
 
-.main-area .guide-btn{ position: fixed; bottom: 25px; left: 70px; padding: 13px 35px; border-radius: 50px; border: 2px solid #FFFFFF;
+.main-area .guide-btn{ position: absolute; bottom: 25px; left: 70px; padding: 13px 35px; border-radius: 50px; border: 2px solid #FFFFFF;
 	color: #fff; background: #008000; }
 
 .main-area .guide-btn:hover{ background: none; }
